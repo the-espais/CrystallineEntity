@@ -19,11 +19,13 @@ I run this with Ubuntu and/or Raspbian, but really any environment where you can
 
 Set the appropriate environment variables:
 
-  1. `TREK_TOKEN` -> your Discord bot token
-  2. `IMG_DB` -> the filename of your image database (in `json` format)
-  3. `IMG_DB_BAK` -> the filename of your image database backup (i.e., what it is copied over to)
+  a. `TREK_TOKEN` -> your Discord bot token
+  
+  b. `IMG_DB` -> the filename of your image database (in `json` format)
+  
+  c. `IMG_DB_BAK` -> the filename of your image database backup (i.e., what it is copied over to)
 
-4. Create a `tmux` session to run in background (use whatever method you fancy here):
+3. Create a `tmux` session to run in background (use whatever method you fancy here):
 
 `tmux`
 
@@ -45,11 +47,11 @@ The commands as specified are fairly rigid at present.  Feel free to make them p
 
 The expectation is that it starts with `.acr`, is followed by a double-quote enclosed trigger (with exclamation point), and followed by a link to a gif that either ends with `.gif`, `.gifv`, or contains `gfycat` within (as they have no direct link).
 
-### Scan `bot-commands` for content (requires Starfleet Command role)
+### Scan `#bot-commands` for content (requires Starfleet Command role)
 
 `!scanchannel`
 
-Because the prior bot left us, this command will scan the `bot-commands` channel for any instance of the `.acr` command and attempt to re-build the library.  At present, its limit is set to scan 5000 messages, though it is alterable if necessary.
+Because the prior bot left us, this command will scan the `#bot-commands` channel for any instance of the `.acr` command and attempt to re-build the library.  At present, its limit is set to scan 5000 messages, though it is alterable if necessary.
 
 ### Return a random gif
 
