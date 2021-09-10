@@ -19,11 +19,11 @@ I run this with Ubuntu and/or Raspbian, but really any environment where you can
 
 Set the appropriate environment variables:
 
-  a. `TREK_TOKEN` -> your Discord bot token
+  * `TREK_TOKEN` -> your Discord bot token
   
-  b. `IMG_DB` -> the filename of your image database (in `json` format)
+  * `IMG_DB` -> the filename of your image database (in `json` format)
   
-  c. `IMG_DB_BAK` -> the filename of your image database backup (i.e., what it is copied over to)
+  * `IMG_DB_BAK` -> the filename of your image database backup (i.e., what it is copied over to)
 
 3. Create a `tmux` session to run in background (use whatever method you fancy here):
 
