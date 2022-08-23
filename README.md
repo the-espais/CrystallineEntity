@@ -79,7 +79,10 @@ TBD
 
 To run as a service, use the included .service file and follow these comprehensive instructions (I used a Pi - should work with any `systemd` setup): https://medium.com/codex/setup-a-python-script-as-a-service-through-systemctl-systemd-f0cc55a42267
   * Note: the service runs as the super user by default, so the Python packages will need to be installed as super user as well.
-
+  * Double note: you need to change the working directory otherwise the database code will not know where to look.  I cheated and used:
+  
+  `os.chdir("/home/user/CrystallineEntity/")`
+  
 ## Future Plans
 
 * More intelligent image archiving (rotating, etc.)
